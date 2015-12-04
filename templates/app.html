@@ -1,0 +1,13 @@
+<template name="app">
+  <p>t'es qui <input type="text"></p><br>
+  <p>tu veux dire quoi 
+    <form class="talka">
+      <input type="text">
+      <button type="submit">send</button>
+    </form></p>
+  <div class="talky">
+    {{ #each talkies }}
+      {{ > talky }}
+    {{ /each }}
+  </div>
+</template>
